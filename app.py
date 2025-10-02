@@ -8,16 +8,6 @@ st.set_page_config(page_title="Asistente Médico KB", page_icon="💊", layout="
 with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Logo animado
-st.markdown(
-    """
-    <div class="logo">
-        <img src="assets/logo.png" width="150">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
 st.title("💊 Asistente Médico Inteligente KB")
 st.write("⚠️ Este asistente **no reemplaza a un médico real**. Solo orienta con precaución.")
 
@@ -30,7 +20,7 @@ if not openai.api_key:
 # Historial
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "👋 Hola, soy tu asistente médico virtual. Describe tus síntomas."}
+        {"role": "assistant", "content": "👋 Hola, soy tu asistente virtual Yan el Panda 🐼. ¿En qué te puedo ayudar?"}
     ]
 
 # Mostrar historial
@@ -64,3 +54,4 @@ if prompt := st.chat_input("Describe tus síntomas..."):
 
         st.markdown(reply)
         st.session_state.messages.append({"role": "assistant", "content": reply})
+
