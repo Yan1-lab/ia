@@ -5,7 +5,7 @@ import os
 st.set_page_config(page_title="Asistente Médico KB", page_icon="💊", layout="centered")
 
 st.title("💊 Asistente Médico Inteligente KB")
-st.write("⚠️ Este asistente **no reemplaza a un médico real**. Solo orienta con precaución.")
+st.write("Estuve trabajando mucho en esto, espero te guste 🥰.")
 
 # OpenAI API Key (usa variable de entorno)
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -50,5 +50,6 @@ if prompt := st.chat_input("Describe tus síntomas..."):
 
         st.markdown(reply)
         st.session_state.messages.append({"role": "assistant", "content": reply})
+
 
 
