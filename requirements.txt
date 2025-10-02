@@ -1,0 +1,12 @@
+streamlit
+openai
+requests
+python-dotenv
+streamlit-lottie
+pypdf
+pytesseract
+pdf2image
+reportlab
+matplotlib
+pandas
+pillow
