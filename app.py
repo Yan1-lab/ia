@@ -4,10 +4,6 @@ import os
 
 st.set_page_config(page_title="Asistente Médico KB", page_icon="💊", layout="centered")
 
-# Inyectar CSS
-with open("assets/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 st.title("💊 Asistente Médico Inteligente KB")
 st.write("⚠️ Este asistente **no reemplaza a un médico real**. Solo orienta con precaución.")
 
@@ -54,4 +50,5 @@ if prompt := st.chat_input("Describe tus síntomas..."):
 
         st.markdown(reply)
         st.session_state.messages.append({"role": "assistant", "content": reply})
+
 
