@@ -10,3 +10,10 @@ reportlab
 matplotlib
 pandas
 pillow
+
+# NUEVOS
+pymysql
+streamlit-cookies-manager
+python-docx
+openpyxl
+python-pptx
